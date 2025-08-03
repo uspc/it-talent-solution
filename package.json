@@ -1,13 +1,20 @@
 {
-  "name": "webprojects",
+  "name": "it-talent-solution",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Professional recruitment firm website with authentication, job posting, and contact management",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:build": "./docker.sh build",
+    "docker:run": "./docker.sh run",
+    "docker:stop": "./docker.sh stop",
+    "docker:logs": "./docker.sh logs",
+    "docker:clean": "./docker.sh clean"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["recruitment", "nodejs", "express", "hr", "jobs", "talent"],
+  "author": "IT Talent Solution",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
