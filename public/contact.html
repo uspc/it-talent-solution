@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - IT Talent Solution</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>IT Talent Solution</h2>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Contact IT Talent Solution</h1>
+      <p class="hero-subtitle">Ready to take the next step in your career? Get in touch with our expert team.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-container">
+          <h2>Submit Your Details</h2>
+          <p>Fill out the form below and upload your resume. We'll get back to you within 24 hours.</p>
+          
+          <form id="contactForm" action="/submit-contact" method="POST" enctype="multipart/form-data" class="contact-form">
+            <div class="form-group required">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div class="form-group required">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+            
+            <div class="form-group required">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="position">Position of Interest</label>
+              <select id="position" name="position">
+                <option value="">Select a position type</option>
+                <option value="Executive Level">Executive Level (C-Suite, VP)</option>
+                <option value="Senior Engineering">Senior Engineering</option>
+                <option value="Software Development">Software Development</option>
+                <option value="Data Science/Analytics">Data Science/Analytics</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Cloud/DevOps">Cloud/DevOps</option>
+                <option value="Product Management">Product Management</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="experience">Years of Experience</label>
+              <select id="experience" name="experience">
+                <option value="">Select experience level</option>
+                <option value="0-2 years">0-2 years</option>
+                <option value="3-5 years">3-5 years</option>
+                <option value="6-10 years">6-10 years</option>
+                <option value="11-15 years">11-15 years</option>
+                <option value="15+ years">15+ years</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="currentSalary">Current Salary Range</label>
+              <select id="currentSalary" name="currentSalary">
+                <option value="">Select salary range</option>
+                <option value="Under $75k">Under $75k</option>
+                <option value="$75k - $100k">$75k - $100k</option>
+                <option value="$100k - $150k">$100k - $150k</option>
+                <option value="$150k - $200k">$150k - $200k</option>
+                <option value="$200k - $300k">$200k - $300k</option>
+                <option value="$300k+">$300k+</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="location">Preferred Location</label>
+              <input type="text" id="location" name="location" placeholder="e.g., San Francisco, CA or Remote">
+            </div>
+            
+            <div class="form-group">
+              <label for="industry">Industry Interest</label>
+              <select id="industry" name="industry">
+                <option value="">Select industry</option>
+                <option value="Banking & Finance">Banking & Finance</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Technology">Technology</option>
+                <option value="Financial Institutions">Financial Institutions</option>
+                <option value="Consulting">Consulting</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group required">
+              <label for="resume">Upload Resume</label>
+              <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+              <label for="resume" class="file-upload-label">
+                Choose file or drag and drop here
+              </label>
+              <small>Accepted formats: PDF, DOC, DOCX (Max 5MB)</small>
+            </div>
+            
+            <div class="form-group">
+              <label for="coverLetter">Cover Letter / Additional Information</label>
+              <textarea id="coverLetter" name="coverLetter" rows="5" placeholder="Tell us about your career goals, key achievements, or any specific requirements..."></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="consent" name="consent" required>
+                <span class="checkmark"></span>
+                I consent to IT Talent Solution storing and processing my personal information for recruitment purposes.
+              </label>
+            </div>
+            
+            <button type="submit" class="btn-submit">Submit Application</button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="contact-item">
+            <h4>📧 Email</h4>
+            <p>hr.ittalentsolution@gmail.com</p>
+          </div>
+          
+          <div class="contact-item">
+            <h4>📞 Phone</h4>
+            <p>(732) 986-9766</p>
+          </div>
+          
+          <div class="contact-item">
+            <h4>📍 Address</h4>
+            <p>204 W Sherman Ave<br>
+            Edison, NJ 08820</p>
+          </div>
+          
+          <div class="contact-item">
+            <h4>🕒 Business Hours</h4>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+            Saturday: 10:00 AM - 2:00 PM<br>
+            Sunday: Closed</p>
+          </div>
+          
+          <div class="why-choose">
+            <h4>Why Choose Us?</h4>
+            <ul>
+              <li>15+ years of specialized industry experience</li>
+              <li>Executive search and leadership placement experts</li>
+              <li>Professional career counseling and development</li>
+              <li>Expert resume writing and optimization</li>
+              <li>International job placement services</li>
+              <li>Confidential and personalized service</li>
+              <li>Quick response time and dedicated support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>IT Talent Solution</h3>
+          <p>Your trusted partner in career advancement and talent acquisition.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#jobs">Browse Jobs</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p>Email: hr.ittalentsolution@gmail.com</p>
+          <p>Phone: (732) 986-9766</p>
+          <p>Address: 204 W Sherman Ave, Edison, NJ 08820</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 IT Talent Solution. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/contact.js"></script>
+</body>
+</html>

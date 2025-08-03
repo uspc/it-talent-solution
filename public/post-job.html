@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Job - IT Talent Solution</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>IT Talent Solution</h2>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="#" id="logoutBtn" class="logout-btn">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Post Job Hero Section -->
+  <section class="post-job-hero">
+    <div class="container">
+      <h1>Post a New Job</h1>
+      <p class="hero-subtitle">Find the perfect candidate for your organization</p>
+    </div>
+  </section>
+
+  <!-- Post Job Form Section -->
+  <section class="post-job-section">
+    <div class="container">
+      <div class="post-job-container">
+        <form id="postJobForm" class="post-job-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="title">Job Title *</label>
+              <input type="text" id="title" name="title" required placeholder="e.g., Senior Software Engineer">
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Company Name *</label>
+              <input type="text" id="company" name="company" required placeholder="e.g., TechCorp Inc.">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="location">Location *</label>
+              <input type="text" id="location" name="location" required placeholder="e.g., San Francisco, CA or Remote">
+            </div>
+            
+            <div class="form-group">
+              <label for="salary">Salary Range</label>
+              <input type="text" id="salary" name="salary" placeholder="e.g., $120k - $160k">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="jobType">Job Type</label>
+              <select id="jobType" name="jobType">
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Remote">Remote</option>
+                <option value="Hybrid">Hybrid</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="experience">Experience Level</label>
+              <select id="experience" name="experience">
+                <option value="Entry Level">Entry Level (0-2 years)</option>
+                <option value="Mid Level">Mid Level (3-5 years)</option>
+                <option value="Senior Level">Senior Level (6-10 years)</option>
+                <option value="Executive Level">Executive Level (10+ years)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="skills">Required Skills</label>
+            <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, React, Node.js, AWS (comma separated)">
+          </div>
+
+          <div class="form-group">
+            <label for="description">Job Description *</label>
+            <textarea id="description" name="description" rows="6" required placeholder="Provide a detailed description of the role, responsibilities, and what the candidate will be doing..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="requirements">Requirements & Qualifications</label>
+            <textarea id="requirements" name="requirements" rows="5" placeholder="List the required qualifications, education, certifications, and any other requirements..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn-secondary" onclick="window.location.href='/'">Cancel</button>
+            <button type="submit" class="btn-primary">Post Job</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>IT Talent Solution</h3>
+          <p>Your trusted partner in career advancement and talent acquisition.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#jobs">Browse Jobs</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p>Email: hr.ittalentsolution@gmail.com</p>
+          <p>Phone: (732) 986-9766</p>
+          <p>Address: 204 W Sherman Ave, Edison, NJ 08820</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 IT Talent Solution. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/post-job.js"></script>
+</body>
+</html>
