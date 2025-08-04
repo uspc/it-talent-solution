@@ -74,7 +74,7 @@ const upload = multer({
 });
 
 // Configure nodemailer (you'll need to set up email credentials)
-const transporter = nodemailer.createTransporter({
+const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'your-email@gmail.com', // Replace with your email
